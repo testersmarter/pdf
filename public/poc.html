@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Injection Test</title>
-  <script>alert("This URL is vulnerable to injection attack and phishing - Meta Tech Red Team");</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Security Alert - Injection Detected</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: #1a1a1a;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .container {
+    max-width: 700px;
+    background: #d32f2f;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #b71c1c;
+    animation: pulse 2s infinite alternate;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .footer {
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #ffccbc;
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 20px #b71c1c;
+    }
+    100% {
+      box-shadow: 0 0 40px #ff8a80;
+    }
+  }
+</style>
 </head>
 <body>
-  <h1>Injection Test Page</h1>
-  <p>If you see this message, the injection is successful.</p>
+  <div class="container">
+    <h1>Security Alert</h1>
+    <p>This URL is <strong>vulnerable to Injection Attacks</strong> and <strong>Phishing</strong>.</p>
+    <p><em>Reported by Meta Tech Red Team</em></p>
+  </div>
+  <div class="footer">
+    Please fix this vulnerability immediately to protect your users and data.
+  </div>
 </body>
 </html>
